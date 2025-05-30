@@ -13,7 +13,7 @@
     "lint:fix": "biome check . --fix"
   },
   "dependencies": {
-    "@worldlabsai/forge": "git+ssh://git@github.com/worldlabsai/forge-internal.git",
+    "@worldlabsai/forge": "git+ssh://git@github.com/forge-gfx/forge",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "stats.js": "^0.17.0",
