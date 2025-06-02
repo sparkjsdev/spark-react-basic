@@ -1,4 +1,4 @@
-import { ForgeControls, SplatMesh } from "@worldlabsai/forge";
+import { ForgeControls, SplatMesh } from "@forge-gfx/forge";
 import { useCallback, useRef } from "react";
 import Stats from "stats.js";
 import * as THREE from "three";
@@ -35,7 +35,7 @@ function App() {
     statsRef.current = stats;
 
     // Add a simple splat mesh similar to the vanilla example.
-    const butterfly = new SplatMesh({ url: "/assets/splats/butterfly.wlg" });
+    const butterfly = new SplatMesh({ url: "/assets/splats/butterfly.spz" });
     butterfly.quaternion.set(1, 0, 0, 0);
     butterfly.position.set(0, 0, -1);
     scene.add(butterfly);
