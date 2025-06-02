@@ -4,6 +4,14 @@ A basic example of using Forge in a React app. This example does not use any add
 
 ## Running the example
 
+First, download the assets:
+
+```bash
+npm run assets:download
+```
+
+Then, run the development server:
+
 ```bash
 npm install
 npm run dev
