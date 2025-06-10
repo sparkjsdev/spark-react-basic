@@ -1,11 +1,11 @@
-import { ForgeControls, SplatMesh } from "@forge-gfx/forge";
+import { SparkControls, SplatMesh } from "@sparkjsdev/spark";
 import { useCallback, useRef } from "react";
 import Stats from "stats.js";
 import * as THREE from "three";
 
 function App() {
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
-  const controlsRef = useRef<ForgeControls | null>(null);
+  const controlsRef = useRef<SparkControls | null>(null);
   const statsRef = useRef<Stats | null>(null);
   const resizeHandlerRef = useRef<(() => void) | null>(null);
 
@@ -24,8 +24,8 @@ function App() {
     renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
     rendererRef.current = renderer;
 
-    // ForgeControls for FPS-style navigation.
-    const controls = new ForgeControls({ canvas });
+    // SparkControls for FPS-style navigation.
+    const controls = new SparkControls({ canvas });
     controlsRef.current = controls;
 
     // FPS stats overlay.
@@ -77,7 +77,7 @@ function App() {
 
   return (
     <div className="flex h-screen w-screen">
-      <canvas ref={initCanvas} id="forge-canvas" className="size-full" />
+      <canvas ref={initCanvas} id="spark-canvas" className="size-full" />
     </div>
   );
 }

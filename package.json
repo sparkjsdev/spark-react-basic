@@ -1,5 +1,5 @@
 {
-  "name": "forge-react-basic",
+  "name": "spark-react-basic",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,7 +13,7 @@
     "lint:fix": "biome check . --fix"
   },
   "dependencies": {
-    "@forge-gfx/forge": "^0.1.0",
+    "@sparkjsdev/spark": "^0.1.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "stats.js": "^0.17.0",
