@@ -16,3 +16,20 @@ Then, run the development server:
 npm install
 npm run dev
 ```
+
+## Using Webpack
+
+> [!IMPORTANT]
+> This example uses Vite as the bundler. There is an issue with Spark and Webpack where the WASM URL is not properly resolved. If you are using Webpack, you can apply the following configuration to your `webpack.config.js` file:
+>
+> ```js
+> module.exports = {
+>   module: {
+>     parser: {
+>       javascript: {
+>         url: false, // disable parsing of `new URL()` syntax
+>       },
+>     },
+>   },
+> };
+> ```
